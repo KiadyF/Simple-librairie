@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple librairie</title>
+</head>
+
+<body>
+    <header>
+        <h1>SIMPLE LIBRAIRIE</h1>
+        <button id="ajouter">Ajouter</button>
+    </header>
+    <section>
+        <dialog>
+            <form method="dialog">
+                <h2>Ajouter un livre</h2>
+                <div class="item">
+                    <label for="genre">Genre</label>
+                    <select name="genre" id="genre" required>
+                        <option value="LINUX">Linux</option>
+                        <option value="DEVELOPPEMENT WEB">Developpement WEB</option>
+                        <option value="GESTION PROJET">Gestion de projet</option>
+                        <option value="BASE DE DONNEE">Base de données</option>
+                        <option value="RESEAUX">Reseaux</option>
+                    </select>
+                </div>
+                <div class="item"><label for="titre">Titre</label>
+                    <input type="text" id="titre" name="titre" required>
+                </div>
+                <div class="item"><label for="auteur">Auteur</label>
+                    <input type="text" id="auteur" name="auteur" required>
+                </div>
+                <div class="item"><label for="date">Date d'edition</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="item"><label for="pages">Nombre de pages</label>
+                    <input type="number" id="pages" name="pages" required>
+                </div>
+                <div class="item"><label for="estLu">Avez-vous déjà lu le livre?</label>
+                    <input type="checkbox" id="estLu" name="estLu">
+                </div>
+                <div class="item"><button id="confirmerBtn">Confirmer</button>
+                    <button id="annulerBtn">X</button>
+                </div>
+            </form>
+        </dialog>
+    </section>
+    <main>
+        <table class="listeLivre">
+            <thead>
+                <tr>
+                    <th style="width: 50px;">ID</th>
+                    <th style="width: 150px;">GENRE</th>
+                    <th style="width: 150px;">TITRE</th>
+                    <th style="width: 150px;">AUTEUR</th>
+                    <th style="width: 150px;">DATE EDITION</th>
+                    <th style="width: 150px;">PAGES</th>
+                    <th style="width: 50px;">LU?</th>
+                    <th style="width: 150px;"></th>
+                    <th style="width: 150px;"></th>
+                </tr>
+            </thead>
+            <tbody>
+
+
+            </tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
